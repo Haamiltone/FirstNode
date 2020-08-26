@@ -1,19 +1,3 @@
-<?php
-
-	session_start();
-	
-	if((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
-	{
-		header('Location:break.php');
-		exit();
-	}
-    else if((isset($_SESSION['zalogowany_admin'])) && ($_SESSION['zalogowany_admin']==true))
-    {
-    	header('Location:admin.php');
-		exit();
-	}
-?>
-
 
 <!doctype HTML>
 <html lang="pl">
@@ -32,15 +16,7 @@
             <input type="text" name="login" placeholder="Enter login">
             <p>Password</p>
             <input type="password" name="pass" placeholder="Enter password">
-            <input type="submit" name="submit" value="Log in">
-			<p style="text-align:center;">	
-				<?php
-					if(isset($_SESSION['blad']))
-					{
-					echo $_SESSION['blad'];
-					}
-				?>
-			</p>   			
+            <input type="submit" name="submit" value="Log in"> 			
             </form>
         
         
