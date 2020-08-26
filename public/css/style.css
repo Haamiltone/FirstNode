@@ -1,118 +1,13 @@
-html, body {
+body{
     margin: 0;
     padding: 0;
-	height:100%;
-	width: 100%;
-	background-color: black;
-	color: white;
+    background: url(image/indeximage.jpg);
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #000000;
     font-family: sans-serif;
 }
-
-#breaktime {
-height: 100px;
-width: 336px;
-border-style: solid;
-border-color: blue;
-}
-
-.button {
-  background-color: #4CAF50; /* Green */
-  border: solid blue;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.button:hover {
-  background-color: #4CAFFF; /* Green */
-  border: solid blue;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition: all .3s ease-in-out;
-}
-
-.content-table{
-    
-	border-collapse: collapse;
-	margin: 25px 0;
-	font-size: 0.9em;
-	min-width: 400px;
-	border-radius: 5px 5px 0px 0px;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgb(0, 0, 0, 15);
-	width: 80%;
-	margin-left:auto; 
-    margin-right:auto;
-}
-
-.content-table thead tr{
-    background-color: #1c8adb;
-	color: #fff;
-	text-align: left;
-	font-weight: bold;
-}
-.content-table th,
-.content-table td{
-	padding: 12px 15px;
-}
-
-.content-table tbody tr{
-	border-bottom: 1px solid #dddddd;	
-}
-
-.content-table tbody tr:nth-of-type(even){
-	background-color: #708090;	
-}
-
-.content-table tbody tr:last-of-type{
-	border-bottom: 2px solid #1c8adb;
-}
-
-.admin-top{
-    border: none;
-    outline: none;
-    background: #1c8adb;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-    transition: all .3s ease-in-out;
-    text-align: center;
-}
-
-.admin-top:hover{
-    cursor: pointer;
-    background: #39dc79;
-    color: #000;
-}
-
-.admin-top a{
-    text-decoration: none;
-    color: white;
-}
-
-.admin-top a:hover{
-    text-decoration: none;
-    color: black;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #1c8adb;
-  color: white;
-  text-align: center;
-}
-
-/*login box*/
 .login-box{
     width: 320px;
     height: 420px;
