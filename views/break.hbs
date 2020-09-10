@@ -1,0 +1,19 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+<br>Current status: <span id=status>Available</span>
+<div>
+<input type="submit" name="startbreak" value="START BREAK" class="button" onclick="timer_start()"><input type="submit" name="endbreak" value="END BREAK" class="button" onclick="timer_stop()">
+<br>
+<div id = breaktime></div>
+<input type="submit" name="startlunch" value="START LUNCH" class="button" onclick="lunch_start()"><input type="submit" name="endlunch" value="END LUNCH" class="button" onclick="timer_stop()">
+
+</div>
+<div id="result"></div>
+<div id="message">{{message}}</div>
+</body>
+</html>
