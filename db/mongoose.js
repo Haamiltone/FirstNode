@@ -7,5 +7,3 @@ mongoose.connect(url, {
     useCreateIndex: true,
     useUnifiedTopology: true
 })
-
-module.exports = User
