@@ -8,3 +8,4 @@ mongoose.connect(url, {
     useUnifiedTopology: true
 })
 
+module.exports = User
