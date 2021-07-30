@@ -1,5 +1,6 @@
 
 const mongoose = require('mongoose')
+const { Int32 } = require('mongodb')
 const userSchema = mongoose.Schema({
     login: {
         type: String,
@@ -23,7 +24,16 @@ const userSchema = mongoose.Schema({
     is_admin: {
         type: Boolean,
         default: false
+    },
+    status: {
+        type: String,
+        default: "available"
     }
+        // ,
+    // time_on_break: {
+    //     type: Number,
+    //     default: 0
+    // }
 })
 
 const User = mongoose.model('User', userSchema)
